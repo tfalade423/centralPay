@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <title>Central Pay|Success</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 64.5%;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #999999;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 7rem 30rem 2rem 30rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .container-transaction {
+    text-align: center;
+  }
+
+  .container-transaction h1 {
+    font-size: 2rem;
+    color: #087D5A;
+  }
+
+  h3 {
+    color: #087D5A;
+  }
+
+  .transaction-id {
+    margin: 0 auto;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .transaction-id p {
+    font-size: 1rem;
+    color: #999999;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+
+  .dotted-line {
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px dashed #B1B1B1;
+    margin: 2rem auto;
+  }
+
+  .d {
+    width: 100%;
+    height: 2px;
+    margin: .55rem auto;
+  }
+
+  .amount {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .amount p {
+    font-size: 1rem;
+    color: #999999;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+
+  .amount p.amount-value {
+    color: #087D5A;
+  }
+
+  .product-description {
+    margin: .8rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .product-description p {
+    font-size: 1rem;
+    color: #999999;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+
+  input {
+    width: 100%;
+    padding: .7rem;
+    border: 1.5px solid #087D5A;
+    border-radius: 5px;
+  }
+
+  input:focus {
+    border: 1.5px solid #087D5A;
+    outline: none;
+  }
+
+  button {
+    padding: 1rem 4rem;
+    margin-top: 3rem;
+    background-color: #295136;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .container-back p {
+    font-weight: bold;
+    color: #CACACA;
+    cursor: pointer;
+    font-size: 1rem;
+
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="container-logo">
+      <img src="../img/jumia.svg" alt="">
+    </div>
+    <div class="container-transaction">
+      <h1>Transaction Summary</h1>
+      <div class="transaction-id">
+        <p>
+          TRANSACTION ID:
+        </p>
+        <!--        <p><%=trans_id%></p> -->
+        <p>
+          16763736373636
+        </p>
+      </div>
+      <div class="dotted-line"></div>
+      <div class="amount">
+        <p>
+          Amount:
+        </p>
+        <!--   <p class="amount-value"><%=util.getFormatedAmount(amount)%></p> -->
+        <p class="amount-value">
+          NGN10,256
+        </p>
+      </div>
+      <div class="product-description">
+        <p>
+          Product Desc:
+        </p>
+        <!--   <p><%=product_desc%></p> -->
+        <p>
+          Jumia Checkout
+        </p>
+      </div>
+      <div class="dotted-line"></div>
+
+      <div class="enter-ussd">
+        <h1>Transaction Successful</h1>
+
+        <i class="far fa-check-circle" style='font-size:68px;color:#087D5A'></i>
+      </div>
+      <div class="d"></div>
+      <h3> Now redirecting back to merchant site...</h3>
+      </form>
+      <div class="d"></div>
+      <div class="container-logo">
+        <p>Powered by Nibss <img src="../img/nibss_logo.svg" alt="" alt="nibss logo"> </p>
+      </div>
+
+
+    </div>
+    <div class="container-back">
+      <a href="#">Go Back</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
