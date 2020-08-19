@@ -20,28 +20,41 @@
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
     height: 100vh;
-    background-color: #999999;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-shadow {
+    border: 1px ;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
   }
 
   .container {
-    width: 100%;
-    height: 100%;
-    padding: 7rem 30rem 2rem 30rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 7rem 10rem 7rem 10rem;
     display: flex;
     justify-content: space-between;
     background-color: white;
   }
+  .container-logo{
+    margin-right: 4rem;
+  }
+  
 
   .container-transaction {
     text-align: center;
+    margin-right: 4em;
   }
 
   .container-transaction h1 {
     font-size: 2rem;
-    color: #087D5A;
-  }
-
-  h3 {
     color: #087D5A;
   }
 
@@ -138,13 +151,19 @@
     cursor: pointer;
     font-size: 1rem;
 
+
   }
+  
+  
+
 </style>
 
 <body>
+  <div class="box-shadow">
   <div class="container">
     <div class="container-logo">
-      <img src="../img/jumia.svg" alt="">
+        <img src="avatar.png" alt="Avatar" class="avatar">
+      <!-- <img src="../img/jumia.svg" alt=""> -->
     </div>
     <div class="container-transaction">
       <h1>Transaction Summary</h1>
@@ -177,17 +196,16 @@
         </p>
       </div>
       <div class="dotted-line"></div>
-
       <div class="enter-ussd">
         <h1>Transaction Successful</h1>
 
         <i class="far fa-check-circle" style='font-size:68px;color:#087D5A'></i>
       </div>
       <div class="d"></div>
-      <h3> Now redirecting back to merchant site...</h3>
+      <h3 style="color:#087D5A;"> Now redirecting back to merchant site...</h3>
       </form>
       <div class="d"></div>
-      <div class="container-logo">
+      <div class="container-logo2">
         <p>Powered by Nibss <img src="../img/nibss_logo.svg" alt="" alt="nibss logo"> </p>
       </div>
 
@@ -197,7 +215,8 @@
       <a href="#">Go Back</a>
     </div>
   </div>
-
+</div>
+</div>
 </body>
 
 </html>
